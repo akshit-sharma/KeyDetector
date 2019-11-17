@@ -1,0 +1,5 @@
+[requires]
+portaudio/v190600.20161030@bincrafters/stable
+
+[generators]
+cmake
