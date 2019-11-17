@@ -1,5 +1,6 @@
 build/
+Build/
 cmake-build-debug/
 
-
+compile_commands.json
 *.swp
