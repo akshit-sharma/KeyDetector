@@ -1,8 +1,10 @@
-#include <iostream>
+#include "PortAudio.h"
 
 int main(int argc, char *argv[]) {
 
-  std::cout << "Hello World \n";
+  PortAudio pa;
+
+  pa.openDefault();
 
   return 0;
 }

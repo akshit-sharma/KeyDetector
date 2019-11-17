@@ -8,7 +8,12 @@ set(CONAN_SYSTEM_INCLUDES ON)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-add_executable(PianoKeyDetector src/main.cpp)
+set(SOURCE_FILES 
+  src/PortAudio.cpp
+  src/Playback.cpp
+  )
+
+add_executable(PianoKeyDetector src/main.cpp ${SOURCE_FILES})
 target_include_directories(PianoKeyDetector SYSTEM PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_libraries(PianoKeyDetector PUBLIC ${CONAN_LIBS})
 
